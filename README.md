@@ -23,10 +23,10 @@ This is a **KDC** (Key Distribution Center), its task is to create both private 
 How It Works
 ---------------
 
-The KDC provides a a public and private key for both client and the server, here are the steps to use it
+The KDC provides a a public and private key for both client and server, here are the steps to use it
 
-* Open the KDC and let the window open
-* Open the chat server, you should get a message saying that it's waiting for connections, if you didn't do step 1 you will get **"Couldn't connect to KDC error!"**. The server will communicate with the KDC to generate a public & private key for it.
+* Open the KDC and leave the window open
+* Open the chat server, you should get a message saying that it's waiting for connections, if you didn't do step 1 you will get **"Couldn't connect to KDC error!"**. The server will communicate with the KDC to generate a public & private key for itself.
  The KDC server will save the public key along with the ID of the server in a database for future requests from clients 
 who want to get the public key of the server (**SQLite** database was used for this purpose)
 
